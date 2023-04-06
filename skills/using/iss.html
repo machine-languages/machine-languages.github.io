@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta name='og:description'>
+<meta property='og:title'>
+<meta property='og:url'>
+<meta property='og:image'>
+<meta property='og:type'>
+<meta charset='UTF-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href="/images/favicon.ico" rel="icon" type="image/ico" />
+<title>
+Skills
+</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet"> 
+
+
+<link href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" rel="stylesheet" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<link href="/assets/unpoly/unpoly.css" rel="stylesheet" />
+<link href="/stylesheets/normalize.css" rel="stylesheet" />
+<link href="/stylesheets/styles.css" rel="stylesheet" />
+<link href="/assets/sudoku/sudoku.css" rel="stylesheet" />
+<link href="/assets/whack-mole/mole.css" rel="stylesheet" />
+<link href="/assets/calculator/calculator.css" rel="stylesheet" />
+<link href="/assets/chess/chess.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/btn.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/contact-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/footer.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/header.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/hero.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/layout.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/menu.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/practice.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill.css" rel="stylesheet" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<script src="/assets/unpoly/unpoly.js" defer="defer" type="module"></script>
+<script src="/javascripts/unpoly_config.js" defer="defer" type="module"></script>
+<script src="/javascripts/compilers/calculator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/chess.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/iss.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/mole.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/password-generator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/sudoku.js" type="module" defer="defer"></script>
+</head>
+<body>
+<div class='layout'>
+<div class='layout--header'>
+<header class='header'>
+<nav class='header--inner-section'>
+<a href="/"><h1>Draigan Le Febvre</h1>
+</a><div class='header--menu'>
+<div class='menu' up-nav>
+<ul class='menu--ul'>
+<li>
+<a href="/" up-layer="root">home</a>
+</li>
+<li>
+<a href="/projects.html" up-layer="root" up-alias="*/projects/* /projects/*">projects</a>
+</li>
+<li>
+<a href="/skills.html" up-layer="root">tech & skills</a>
+</li>
+<li>
+<a href="/contact.html" up-layer="root">contact</a>
+</li>
+<li>
+<a href="https://github.com/draigan" class="menu--icon-link" target="_blank" rel="noopener"><img src="/images/GitHub.png" class="menu--icon" alt="github" />
+</a></li>
+</ul>
+</div>
+</div>
+<a href="/" class="menu--hamburger-link" up-layer="new drawer" up-target=".menu--ul"><img src="/images/bars.svg" class="menu--hamburger-image" alt="Navigation" />
+</a></nav>
+</header>
+</div>
+<main class='layout--main'>
+<section>
+<div class='skill-wrapper'>
+<div class='skill-page--title'>
+Skills Used For Project
+"Iss"
+</div>
+<div class='skill-page-inner-section'>
+<div class='skill-page--left-column'>
+<div class='skill -with-description'>
+<div class='skill--image'>
+<a href="/skills/javascript.html"><img src="/images/skills/javascript.png" class="skill--image" alt="Javascript Logo" />
+</a></div>
+<h2 class='skill--heading'>
+Javascript
+</h2>
+<p class='skill--description'>
+Aliquam erat volutpat. Pellentesque a lectus malesuada, facilisis mi ultricies,
+dictum mauris. Cras et mi maximus, facilisis diam sed, iaculis ex.
+Integer eleifend lacus vel enim dapibus, id bibendum arcu sagittis.
+
+</p>
+<div class='skill--buttons'>
+<a href="/skills/javascript.html" class="btn -black"><span class='btn--text'>
+Read More
+</span>
+</a><a href="/projects/using/javascript.html" up-layer="new" up-size="large" up-target=".project-page--left-column" class="btn -black"><p class='btn--text'>
+9
+projects
+</p>
+</a></div>
+</div>
+
+<div class='skill -with-description'>
+<div class='skill--image'>
+<a href="/skills/leaflet.html"><img src="/images/skills/leaflet.jpg" class="skill--image" alt="LeafLet" />
+</a></div>
+<h2 class='skill--heading'>
+Leaflet
+</h2>
+<p class='skill--description'>
+Aliquam erat volutpat. Pellentesque a lectus malesuada, facilisis mi ultricies,
+dictum mauris. Cras et mi maximus, facilisis diam sed, iaculis ex.
+Integer eleifend lacus vel enim dapibus, id bibendum arcu sagittis.
+
+</p>
+<div class='skill--buttons'>
+<a href="/skills/leaflet.html" class="btn -black"><span class='btn--text'>
+Read More
+</span>
+</a><a href="/projects/using/leaflet.html" up-layer="new" up-size="large" up-target=".project-page--left-column" class="btn -black"><p class='btn--text'>
+1
+project
+</p>
+</a></div>
+</div>
+
+</div>
+<div class='skill-page--right-column'>
+<h3 class='skill-page--filter-heading'>
+Filter By Project
+</h3>
+<ul up-nav>
+<li>
+<a href="/skills.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+All
+</span>
+</a></li>
+<li>
+<a href="/skills/using/chess.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+Chess
+</span>
+</a></li>
+<li>
+<a href="/skills/using/sudoku.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+Sudoku
+</span>
+</a></li>
+<li>
+<a href="/skills/using/portfolio.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+This Portfolio
+</span>
+</a></li>
+<li>
+<a href="/skills/using/toronto-landtrust-bot.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+Toronto Landtrust Bot
+</span>
+</a></li>
+<li>
+<a href="/skills/using/bsk.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+Buy & Sell Kings Website
+</span>
+</a></li>
+<li>
+<a href="/skills/using/pass_generator.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+Password Generator
+</span>
+</a></li>
+<li>
+<a href="/skills/using/calculator.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+Calculator
+</span>
+</a></li>
+<li>
+<a href="/skills/using/mole.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+Whack A Mole
+</span>
+</a></li>
+<li>
+<a href="/skills/using/iss.html" up-history="true" up-target=".skill-page--left-column .skill-page--title" class="btn -black"><span class='btn--text'>
+ISS Tracker
+</span>
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<div class='layout--footer'>
+<footer class='footer'>
+<div class='footer--inner-section'>
+<span class='footer--copyright'>
+© Copyright 2022</span>
+</span>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>

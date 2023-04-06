@@ -1,0 +1,14 @@
+.footer {
+  background: #0d0d0d;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px; }
+
+.footer--inner-section {
+  width: 1200px; }
+
+.footer--copyright {
+  font-size: 1.25rem;
+  color: #d9d9d9; }

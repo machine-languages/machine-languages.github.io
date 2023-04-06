@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta content='A simple application that consumes an API and uses the data to track the International Space Station on a Leaflet map. 
+' name='og:description'>
+<meta content='ISS Tracker' property='og:title'>
+<meta content='/projects/iss.html' property='og:url'>
+<meta content='projects/iss.png' property='og:image'>
+<meta content='website' property='og:type'>
+
+<meta charset='UTF-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href="/images/favicon.ico" rel="icon" type="image/ico" />
+<title>
+Project
+</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet"> 
+
+
+<link href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" rel="stylesheet" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<link href="/assets/unpoly/unpoly.css" rel="stylesheet" />
+<link href="/stylesheets/normalize.css" rel="stylesheet" />
+<link href="/stylesheets/styles.css" rel="stylesheet" />
+<link href="/assets/sudoku/sudoku.css" rel="stylesheet" />
+<link href="/assets/whack-mole/mole.css" rel="stylesheet" />
+<link href="/assets/calculator/calculator.css" rel="stylesheet" />
+<link href="/assets/chess/chess.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/btn.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/contact-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/footer.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/header.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/hero.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/layout.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/menu.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/practice.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill.css" rel="stylesheet" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<script src="/assets/unpoly/unpoly.js" defer="defer" type="module"></script>
+<script src="/javascripts/unpoly_config.js" defer="defer" type="module"></script>
+<script src="/javascripts/compilers/calculator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/chess.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/iss.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/mole.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/password-generator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/sudoku.js" type="module" defer="defer"></script>
+</head>
+<body>
+<div class='layout'>
+<div class='layout--header'>
+<header class='header'>
+<nav class='header--inner-section'>
+<a href="/"><h1>Draigan Le Febvre</h1>
+</a><div class='header--menu'>
+<div class='menu' up-nav>
+<ul class='menu--ul'>
+<li>
+<a href="/" up-layer="root">home</a>
+</li>
+<li>
+<a href="/projects.html" up-layer="root" up-alias="*/projects/* /projects/*">projects</a>
+</li>
+<li>
+<a href="/skills.html" up-layer="root">tech & skills</a>
+</li>
+<li>
+<a href="/contact.html" up-layer="root">contact</a>
+</li>
+<li>
+<a href="https://github.com/draigan" class="menu--icon-link" target="_blank" rel="noopener"><img src="/images/GitHub.png" class="menu--icon" alt="github" />
+</a></li>
+</ul>
+</div>
+</div>
+<a href="/" class="menu--hamburger-link" up-layer="new drawer" up-target=".menu--ul"><img src="/images/bars.svg" class="menu--hamburger-image" alt="Navigation" />
+</a></nav>
+</header>
+</div>
+<main class='layout--main'>
+<h1 class='project-view--title'>ISS Tracker</h1>
+<div class='project-view'>
+<span class='project-view--date'>
+Created At: Sep 30 2022 - Updated At:
+Nov 2 2022
+</span>
+<p class='project-view--long-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate sed quam at rhoncus. Phasellus eget fermentum neque. Suspendisse potenti. Nam imperdiet ex eget felis tristique consectetur. Nulla tristique purus nunc, ac dignissim tortor egestas a. Praesent ac maximus turpis. Fusce ac libero eu dolor aliquam hendrerit. Vivamus vestibulum dolor eget sodales porta. Nam eget pellentesque enim. Fusce elit lorem, tincidunt eu dolor vitae, vulputate vestibulum tellus. Morbi fermentum, lorem at pellentesque vestibulum, odio neque blandit nisi, sit amet accumsan lacus purus vel ligula. Donec eu faucibus urna.
+Nullam viverra orci eget bibendum hendrerit. Mauris sed maximus risus. Ut interdum tincidunt lorem, in molestie magna consequat eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc convallis tincidunt porta. Sed tristique magna eget malesuada tempus. Sed vestibulum turpis vitae lectus aliquet efficitur. Nunc elit enim, commodo ac dapibus quis, fringilla eget ipsum. Fusce ullamcorper dui vitae ante ultrices, ut consequat sapien porta. Etiam sed turpis eu turpis malesuada vestibulum. Aliquam at est at ex rhoncus cursus. Aliquam laoreet tincidunt lorem, nec gravida massa gravida nec. Mauris dapibus pharetra purus a sollicitudin. Sed sed dignissim dui. Maecenas vel velit eget tortor tincidunt tristique.
+Etiam sed nisi semper, porttitor ante in, viverra magna. Sed id dictum odio. Aliquam in mi vitae nunc ultrices tempus vitae sed elit. Sed id ipsum dolor. Etiam ligula justo, fermentum in sodales id, interdum sit amet nibh. Ut imperdiet vehicula mollis. Suspendisse imperdiet viverra sem nec auctor. Phasellus egestas, justo non fermentum lobortis. 
+</p>
+<a href="https://github.com/Draigan/iss_location" class="btn -black" target="_blank" rel="noopener"><span class='btn--text'>
+Github
+</span>
+</a></div>
+
+</main>
+<div class='layout--footer'>
+<footer class='footer'>
+<div class='footer--inner-section'>
+<span class='footer--copyright'>
+© Copyright 2022</span>
+</span>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+.main {
+  background-image: url("/farm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.board {
+  background-color: black;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  cursor: url("hammer.png"), auto;
+  opacity: 0.9;
+}
+
+.board--hole {
+  height: 20rem;
+  width: 20rem;
+  margin: 20px;
+  background-color: #66b2b2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board--hole:hover {
+  background-color: #009999;
+}
+
+.board--hole:active {
+  background-color: #0092ff;
+  opacity: 0.7;
+}
+
+.board--hole.-hidden {
+  background-color: #004c4c;
+}
+
+.board--mole-image {
+  width: 80%;
+  height: 80%;
+  opacity: 1;
+}
+
+.board--mole-image.-hidden {
+  display: none;
+}
+
+.hole--mole {
+  display: flex;
+  justify-content: center;
+}
+
+.board--mole-image:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.score-view {
+  font-size: 15px;
+  user-select: none;
+  display: none;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.layout--header {
+  margin-top: 0; }
+
+.layout--main {
+  flex: 1; }
+
+.layout--footer {
+  margin-top: 1rem; }

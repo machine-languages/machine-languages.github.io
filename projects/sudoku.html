@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta content='This was a cool project because I had to create the algorithm to actually generate a completed Sudoku puzzle. I came up with
+the idea of how to do it on my own and it took me quite a few tries. This was also my first project that fully generates all
+the DOM nodes from within Javascript and only uses one HTML defined node to attach itself to. 
+' name='og:description'>
+<meta content='Sudoku' property='og:title'>
+<meta content='/projects/sudoku.html' property='og:url'>
+<meta content='projects/sudoku.png' property='og:image'>
+<meta content='website' property='og:type'>
+
+<meta charset='UTF-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href="/images/favicon.ico" rel="icon" type="image/ico" />
+<title>
+Project
+</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet"> 
+
+
+<link href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" rel="stylesheet" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<link href="/assets/unpoly/unpoly.css" rel="stylesheet" />
+<link href="/stylesheets/normalize.css" rel="stylesheet" />
+<link href="/stylesheets/styles.css" rel="stylesheet" />
+<link href="/assets/sudoku/sudoku.css" rel="stylesheet" />
+<link href="/assets/snake/snake.css" rel="stylesheet" />
+<link href="/assets/whack-mole/mole.css" rel="stylesheet" />
+<link href="/assets/calculator/calculator.css" rel="stylesheet" />
+<link href="/assets/chess/chess.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/btn.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/contact-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/footer.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/header.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/hero.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/layout.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/menu.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/practice.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill.css" rel="stylesheet" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<script src="/assets/unpoly/unpoly.js" defer="defer" type="module"></script>
+<script src="/javascripts/unpoly_config.js" defer="defer" type="module"></script>
+<script src="/javascripts/compilers/calculator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/chess.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/iss.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/mole.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/password-generator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/snake.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/sudoku.js" type="module" defer="defer"></script>
+</head>
+<body>
+<div class='layout'>
+<div class='layout--header'>
+<header class='header'>
+<nav class='header--inner-section'>
+<a href="/"><h1>Machine&nbsp;Language</h1>
+</a><div class='header--menu'>
+<div class='menu' up-nav>
+<ul class='menu--ul'>
+<li>
+<a href="/" up-layer="root">home</a>
+</li>
+<li>
+<a href="/projects.html" up-layer="root" up-alias="*/projects/* /projects/*">projects</a>
+</li>
+<li>
+<a href="/skills.html" up-layer="root">tech & skills</a>
+</li>
+<li>
+<a href="/contact.html" up-layer="root">contact</a>
+</li>
+<li>
+<a href="https://github.com/machine-language" class="menu--icon-link" target="_blank" rel="noopener"><img src="/images/GitHub.png" class="menu--icon" alt="github" />
+</a></li>
+</ul>
+</div>
+</div>
+<a href="/" class="menu--hamburger-link" up-layer="new drawer" up-target=".menu--ul"><img src="/images/bars.svg" class="menu--hamburger-image" alt="Navigation" />
+</a></nav>
+</header>
+</div>
+<main class='layout--main'>
+<h1 class='project-view--title'>Sudoku</h1>
+<div class='project-view'>
+<div class='project-view--featured-image-wrapper'>
+<img src="/images/projects/sudoku.png" class="project-view--featured-image" alt="Sudoku Board" />
+javascript
+git
+css
+sass
+vim
+<a href="https://github.com/machine-language/sudoku" class="btn -black" target="_blank" rel="noopener"><span class='btn--text'>
+Github
+</span>
+</a><a href="/projects/custom_projects/_sudoku.html" class="btn -black" up-layer="new" up-size="large" up-class="-sudoku" up-target=".project-view--custom-content"><span class='btn--text'>
+Live View
+</span>
+</a></div>
+<p class='project-view--long-description'>
+This project was one of my first ideas to make after making my chess program. Coming up with the algorithm to fill in the 9x9 grid in the correct order was tricky and took a lot of creative thinking. 
+My first attempts were failures. I could fill out about a third of the grid but then the program would hang. Eventually I came up with a method that did work. 
+This program has three modules. First is the completed sudoku generator, second is anything related to the inputs, and the third module creates the DOM structure.
+<br>
+<br>
+A sudoku grid must follow one simple rule. Each number from 1 - 9 must only appear once in its row, column, and box. I built a 9x9 2d array and placed an array in all of its positions that contained the numbers 1 - 9.
+Now I had a 9x9 array of arrays. I randomly picked a square from my 9x9 array and picked one of the numbers from it. I then removed that number from all the arrays in the rows, columns, and boxes so that I couldn't pick it again. 
+I repeated this process until each squares array contained only one final number. This method worked 50 percent of the time. It was still possible for the program to get stuck doing this. It would need backtracking, but
+I went for the simpler option and just rerolled until we did get a working version.
+<br>
+<br>
+Now I had my completed sudoku grid and I could use that to create a playable sudoku game. First I needed to generate the DOM structure. There was no writing it in HTML because I needed many many nodes.
+I created a helper function that would create a new div, assign it a class, and attach the div to a node. Then I simply created all the nodes I needed. I needed a 9x9 grid of course, and also I needed each 
+cell in that grid to have within it a 3x3 grid. This 3x3 grid would be for making notes on the square. Then I made nodes for the big numbers that show up when the button is pressed. I also made
+nodes for all the buttons. Then I styled it all with CSS/Sass. 
+<br>
+<br>
+I made an interface module. Its job was to control the UI and display anything that needed to be displayed. I created event listeners for all the necessary buttons. I made a new game button and a solution button.
+I made the note mode. Obviously there was more to it than this, but I don't want to bore you too much with the details. 
+<br>
+<br>
+I feel like I did a pretty decent job on this project. The interface and create elements modules were done months after I had already made the sudoku grid generator. I feel like the later modules were a lot cleaner.
+If I redid the sudoku generator again, I think it would be a lot cleaner. Especially how I checked a row column and grid. I could do that with 1 double for loop now, instead of making like 18 unnecessary variables.
+Also the algorithm itself is a little confusing for even me to understand when I am looking back on it today. I think if I wrote the same program today, it would be much simpler to understand. 
+
+</p>
+</div>
+
+</main>
+<div class='layout--footer'>
+<footer class='footer'>
+<div class='footer--inner-section'>
+<span class='footer--copyright'>
+</span>
+</span>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<div class='project-view--custom-content'>
+<div password-generator class="flex-wrapper password-generator">
+    <div class="top"><h3>Password Generator</h3></div>
+    <div class="middle"><input type="text" value="" id="password-field"><button data-copy-button>Copy</button>
+    </div>
+    <div class="bottom">
+     
+      
+            <form action="" id="pass-gen-id">
+                <div class="slider-wrapper">
+            <input data-slider type="range" id="slider" class="slider-class" name="slider" step="1"
+                min="4" max="20" >
+            <label for="slider"></label>
+            <div>
+                <p id="slider-score"></p>
+ </div>
+        </div>
+
+            <div>  
+                <input type="checkbox" id="uppercase" name="" onclick="checkStrength()" checked> Include Uppercase
+                <label for=""></label>
+                <div>
+                   
+                        <input type="checkbox" id="lowercase" name="" onclick="checkStrength()" checked> Include
+                        Lowercase
+                        <label for=""></label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="numbers" name="" onclick="checkStrength()" checked> Include
+                        Numbers
+                        <label for=""></label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="special" name="" onclick="checkStrength()" > Include
+                        Special Characters
+                        <label for=""></label>
+                    </div>
+
+          
+
+                <div class="strength">
+                    <h7>Strength</h7>
+                    <div class="strength-meter">
+                        <p id="strength-indicator" ></p>
+               <div id="tick1" class="strength-tick-1"></div>
+               <div id="tick2" class="strength-tick-2"></div>
+               <div id="tick3" class="strength-tick-3"></div>
+               <div id="tick4" class="strength-tick-4"></div>
+               <div id="tick5" class="strength-tick-5"></div>
+               <div id="tick6" class="strength-tick-6"></div>
+
+
+                    </div>
+                </div>
+               
+
+            </div>
+        </form>
+        <button data-generate-button>Generate</button>
+        </div>
+
+
+</div>

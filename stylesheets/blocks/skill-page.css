@@ -1,0 +1,65 @@
+.skill-page-inner-section {
+  max-width: 1200px;
+  display: grid;
+  grid-template-areas: "title title" "left-column right-column";
+  grid-template-columns: 6fr 1fr;
+  margin: auto; }
+
+.skill-page--title {
+  text-align: center;
+  grid-area: title;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #171717;
+  font-weight: normal;
+  margin-top: 3rem; }
+
+.skill-page--left-column {
+  grid-area: left-column;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column; }
+
+.skill-page--filter-heading {
+  text-align: center;
+  margin-bottom: 0.25rem; }
+
+.skill-page--right-column {
+  margin-inline: 1rem;
+  grid-area: right-column; }
+  .skill-page--right-column .up-current {
+    color: #009999; }
+  .skill-page--right-column .divider {
+    border-bottom: 1px solid grey;
+    border-top: 0px; }
+  .skill-page--right-column ul {
+    border-radius: 5px;
+    background: #cccccc;
+    color: #171717;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; }
+  .skill-page--right-column li {
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0; }
+    .skill-page--right-column li a {
+      color: #0d0d0d; }
+
+@media screen and (max-width: 900px) {
+  .skill-page-inner-section {
+    grid-template-areas: "title title" "right-column right-column" "left-column left-column";
+    padding: 0.5rem; }
+  .skill-page--right-column {
+    width: 100%;
+    margin-inline: 0;
+    justify-content: center;
+    margin-bottom: 0.5rem; }
+    .skill-page--right-column ul {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      margin-inline: 0; } }

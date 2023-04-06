@@ -1,0 +1,21 @@
+.skill-wrapper--header {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #171717;
+  font-weight: normal; }
+
+.skill-wrapper--inner-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  max-width: 1200px;
+  gap: 1rem;
+  margin: 0 auto 0.5rem; }
+
+.skill-wrapper--inner-section.-with-description {
+  grid-template-columns: 1fr; }
+
+.skill-wrapper--footer {
+  text-align: center; }
+  .skill-wrapper--footer a {
+    color: #0d0d0d; }

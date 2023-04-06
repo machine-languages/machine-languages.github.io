@@ -1,0 +1,46 @@
+.project-view {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-areas: "image long-description";
+  margin: auto;
+  max-width: 1200px; }
+
+.project-view--title {
+  grid-area: title;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #171717;
+  font-weight: normal;
+  margin-top: 3rem; }
+
+.project-view--featured-image-wrapper {
+  grid-area: image;
+  width: 12rem;
+  text-align: center; }
+
+.project-view--featured-image {
+  width: 12rem;
+  border-radius: 7px; }
+
+.project-view--long-description {
+  grid-area: long-description;
+  overflow-y: auto;
+  background-color: #d9d9d9;
+  padding: 0.25rem; }
+
+.project-view--description {
+  grid-area: description; }
+
+@media screen and (max-width: 900px) {
+  .project-view {
+    grid-template-areas: "title image" "description description" "long-description long-description";
+    justify-content: center; }
+    .project-view .project-view--featured-image {
+      width: 30%; }
+  .project-view--featured-image-wrapper {
+    width: 100%; }
+    .project-view--featured-image-wrapper a {
+      display: flex;
+      justify-content: flex-end; } }

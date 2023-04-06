@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta content='This full featured chess program was my very first project. I chose it because I love Chess and have been playing it since I was a kid. Creating this was a very big leap.
+I started with only the most basic programming concepts and a vague knowledge of how to use those tools to form a cohesive result.
+It took a lot of creativity from me, but in the end I persevered! 
+' name='og:description'>
+<meta content='Chess' property='og:title'>
+<meta content='/projects/chess.html' property='og:url'>
+<meta content='projects/chessboard.png' property='og:image'>
+<meta content='website' property='og:type'>
+
+<meta charset='UTF-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href="/images/favicon.ico" rel="icon" type="image/ico" />
+<title>
+Project
+</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet"> 
+
+
+<link href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" rel="stylesheet" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<link href="/assets/unpoly/unpoly.css" rel="stylesheet" />
+<link href="/stylesheets/normalize.css" rel="stylesheet" />
+<link href="/stylesheets/styles.css" rel="stylesheet" />
+<link href="/assets/sudoku/sudoku.css" rel="stylesheet" />
+<link href="/assets/snake/snake.css" rel="stylesheet" />
+<link href="/assets/whack-mole/mole.css" rel="stylesheet" />
+<link href="/assets/calculator/calculator.css" rel="stylesheet" />
+<link href="/assets/chess/chess.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/btn.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/contact-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/footer.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/header.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/hero.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/layout.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/menu.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/practice.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill.css" rel="stylesheet" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<script src="/assets/unpoly/unpoly.js" defer="defer" type="module"></script>
+<script src="/javascripts/unpoly_config.js" defer="defer" type="module"></script>
+<script src="/javascripts/compilers/calculator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/chess.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/iss.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/mole.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/password-generator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/snake.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/sudoku.js" type="module" defer="defer"></script>
+</head>
+<body>
+<div class='layout'>
+<div class='layout--header'>
+<header class='header'>
+<nav class='header--inner-section'>
+<a href="/"><h1>Machine&nbsp;Language</h1>
+</a><div class='header--menu'>
+<div class='menu' up-nav>
+<ul class='menu--ul'>
+<li>
+<a href="/" up-layer="root">home</a>
+</li>
+<li>
+<a href="/projects.html" up-layer="root" up-alias="*/projects/* /projects/*">projects</a>
+</li>
+<li>
+<a href="/skills.html" up-layer="root">tech & skills</a>
+</li>
+<li>
+<a href="/contact.html" up-layer="root">contact</a>
+</li>
+<li>
+<a href="https://github.com/machine-language" class="menu--icon-link" target="_blank" rel="noopener"><img src="/images/GitHub.png" class="menu--icon" alt="github" />
+</a></li>
+</ul>
+</div>
+</div>
+<a href="/" class="menu--hamburger-link" up-layer="new drawer" up-target=".menu--ul"><img src="/images/bars.svg" class="menu--hamburger-image" alt="Navigation" />
+</a></nav>
+</header>
+</div>
+<main class='layout--main'>
+<h1 class='project-view--title'>Chess</h1>
+<div class='project-view'>
+<div class='project-view--featured-image-wrapper'>
+<img src="/images/projects/chessboard.png" class="project-view--featured-image" alt="Chessboard" />
+javascript
+git
+html
+css
+<a href="https://github.com/machine-language/chess" class="btn -black" target="_blank" rel="noopener"><span class='btn--text'>
+Github
+</span>
+</a><a href="/projects/custom_projects/_chess.html" class="btn -black" up-layer="new" up-size="large" up-class="-chess" up-target=".project-view--custom-content"><span class='btn--text'>
+Live View
+</span>
+</a></div>
+<p class='project-view--long-description'>
+This was a very exciting project for me. I only started learning how to program two weeks earlier. 
+I didn't get caught in tutorial hell or in memorizing syntax.
+I had a very basic knowledge of programming tools like arrays, objects and conditionals and dove right in!
+This is where I forged a strong foundation for thinking like a programmer. 
+I spent a lot of time being creative and thinking of different ways I could combine the small number of tools that I had at my disposal.
+<br>
+<br>
+The first thing I had to figure out was how to create the board. I found out I could use HTML tables and CSS. Today, I would use css grid,
+dynamically create the DOM nodes within Javascript, and then attach them to a single HTML defined node. This way I could easily implement my chess game anywhere
+and I wouldn't have to deal with too much HTML.
+<br>
+<br>
+I created an object for each square and gave it keys like "pieceType" and "pieceColor". I also gave each square a key with coordinates.
+Today the first thing I would do is put those objects into a 2d array. This would do away with adding the coordinates as keys into the objects themselves.
+Also I wouldn't have to use a find method to get the object I need. Instead, I could say for instance square[0][4].
+<br>
+<br>
+Then I created a function that loops through each square and changes the innerHTML to an image of the current piece and piece colour that 
+a square contains. Now I had a board that had all the pieces on it, but it didn't really do anything yet.
+<br>
+<br>
+In order to find possible moves for a piece, I used a recursive
+function to traverse the squares by their coordinates. The base case was encountering a square with the same color piece, or a different color piece,
+or if the coordinates returned null. As the recursive function traversed my objects, it would mark squares as "possible" or "encounter", which were keys
+on my square objects. Today I would use iteration instead of recursion to determine movement possibilities. Simply because there are more ways to go wrong using
+recursion over iteration, and it wouldn't have been much harder to read using iteration. The better time complexity is nice too. 
+<br>
+<br>
+I then had to determine who could move and when. I created different states the game could be in and used those states to constrain what clicking on a piece
+would do in different situations and I created a simple turn system. Now I was able to move pieces during their respective turn and trade with other pieces.
+<br>
+<br>
+The next big challenge for me was the chess rule <a target=”_blank” href="https://en.wikipedia.org/wiki/En_passant">En Passant</a>. This ended up being fairly straightforward once I wrapped my head around it.
+It was as simple enough as setting the conditions for the move and then translating the move sequence into Javascript. 
+I did the same for castling <a target=”_blank” href="https://en.wikipedia.org/wiki/Castling">Castling</a> 
+<br>
+<br>
+Then I had to figure out how to stop a move if it would result in putting yourself into check (In chess, you can not put yourself into check).
+Before I could do that, I had to build some other functionality into my program.
+I had already had the idea when thinking about checkmate, that I needed a second board to play through possible moves. 
+Adding a new board was as simple as adding "alternativePieceType" and "alternativePieceColor" keys to my square objects and copying the main board to the alternative.
+Now I could run through possibilities without changing the actual board state. I also created another board that was always one move in the past so I could get the past
+board state when I neeed it. Today I would use something called a FEN number to keep track of past board states. A FEN number
+is a string that can be interpolated into a board state. With the FEN number, I wouldn't need the alternative boards. I could do any calculations on one board
+and simply retrieve my real board state from my FEN number. This would simplify my code and make my project overall easier to understand.
+<br>
+<br>
+I also needed a way to mark if a square could be attacked by any given piece, so I added a key "count" to the squares objects and assigned it 0.
+I then ran the movement possibilities of every piece and added +1 to the "count" of any square which was under vision of a piece. This way, I didn't just know a square
+was under attack, I knew exactly how many pieces were attacking it. Now that I had a way to determine if a king was in check, and a way to restore past board states, 
+I could simply see if a player moving a piece put themself in check, and if so, simply go back in time one move.
+<br>
+<br>
+Now it was time for checkmate. A king was in checkmate if a square it was on, and all the squares that were one square away, had a "count" greater than 0 and the piece
+that was delivering a check could not be taken or blocked by another piece. This required me to make all possible moves, and check if it was still mate after each move.
+If any move resulted in the king not being in check, searching for a checkmate immediately ceased. If we checked all moves and the king was still in check, the game 
+was over.
+<br>
+<br>
+I am quite pleased with how this project turned out. Obviously because this was my first project, that quality of some of the code is quite convoluted and could be
+simplified, but overall I think I did a good job. At the very least, I got it working! :)
+
+</p>
+</div>
+
+</main>
+<div class='layout--footer'>
+<footer class='footer'>
+<div class='footer--inner-section'>
+<span class='footer--copyright'>
+</span>
+</span>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>

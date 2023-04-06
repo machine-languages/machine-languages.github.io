@@ -1,0 +1,57 @@
+.skill {
+  display: grid;
+  grid-template-areas: "image heading" "image buttons";
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  border-radius: 5px;
+  background: #cccccc;
+  color: #171717;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
+
+.skill--description {
+  display: none;
+  grid-area: description; }
+
+.skill.-with-description {
+  grid-template-areas: "image heading buttons" "image description buttons";
+  padding: 0.5rem; }
+  .skill.-with-description .skill--description {
+    padding: 0.5rem;
+    display: block; }
+  .skill.-with-description .skill--heading {
+    padding-inline: 0.5rem; }
+  .skill.-with-description .skill--image {
+    width: 6rem; }
+
+.skill--heading {
+  margin: 0;
+  text-transform: uppercase;
+  grid-area: heading; }
+
+.skill--buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-area: buttons; }
+
+.skill--image {
+  width: 70%;
+  grid-area: image; }
+  .skill--image img {
+    width: 100%; }
+
+@media screen and (max-width: 600px) {
+  .skill.-with-description {
+    grid-template-areas: "heading heading" "image image" "description description" "buttons buttons";
+    text-align: center; }
+    .skill.-with-description .skill--image {
+      margin: auto;
+      width: 80%; }
+    .skill.-with-description .skill--buttons {
+      margin: auto; }
+  .skill.-with-description .skill--image {
+    width: 10rem; } }

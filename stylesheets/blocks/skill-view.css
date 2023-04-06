@@ -1,0 +1,44 @@
+.skill-view {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "image long-description";
+  margin: auto;
+  max-width: 1200px; }
+
+.skill-view--title {
+  grid-area: title;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #171717;
+  font-weight: normal;
+  margin-top: 3rem; }
+
+.skill-view--featured-image-wrapper {
+  grid-area: image;
+  width: 12rem;
+  text-align: center; }
+
+.skill-view--featured-image {
+  width: 12rem; }
+
+.skill-view--long-description {
+  grid-area: long-description;
+  overflow-y: auto;
+  background-color: #d9d9d9;
+  padding: 0.25rem; }
+
+.skill-view--description {
+  grid-area: description; }
+
+@media screen and (max-width: 900px) {
+  .skill-view {
+    grid-template-areas: "title image" "description description" "long-description long-description";
+    justify-content: center; }
+    .skill-view .skill-view--featured-image {
+      width: 30%; }
+  .skill-view--featured-image-wrapper {
+    width: 100%; }
+    .skill-view--featured-image-wrapper a {
+      display: flex;
+      justify-content: flex-end; } }

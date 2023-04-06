@@ -1,0 +1,90 @@
+.contact-page--header {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #171717;
+  font-weight: normal;
+  margin-top: 3rem; }
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 3fr; }
+
+.contact--info-textarea {
+  border-radius: 5px;
+  background: #cccccc;
+  color: #171717;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
+
+.contact--map {
+  width: 100%;
+  height: 300px;
+  grid-area: map; }
+
+.contact--map-container {
+  border-radius: 5px;
+  background: #cccccc;
+  color: #171717;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
+
+.contact--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  padding-left: 0;
+  grid-area: contact-form; }
+
+.contact--info {
+  width: 100%;
+  grid-area: info;
+  padding: 1.5rem;
+  display: flex;
+  background-color: #d9d9d9;
+  flex-direction: column;
+  margin-bottom: 1rem; }
+  .contact--info h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.25rem; }
+  .contact--info p {
+    margin-bottom: 0.5rem; }
+  .contact--info ul {
+    list-style: none;
+    text-align: center; }
+    .contact--info ul li {
+      margin-bottom: 0.25rem; }
+    .contact--info ul li:nth-child(odd) {
+      font-weight: bold; }
+  .contact--info hr {
+    border-top: 0px;
+    width: 75%;
+    margin: auto; }
+
+fieldset {
+  width: 100%; }
+
+.contact input[type=text], .contact input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border: 1px solid #8F8F9D; }
+
+textarea {
+  height: 400px;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #8F8F9D; }
+
+input[type=submit]:hover {
+  background-color: #d9d9d9; }
+
+.contact--left-column {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem; }

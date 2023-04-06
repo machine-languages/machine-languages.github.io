@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta content='This is a cool project. I&#39;m quite proud of it. It&#39;s actually being used everyday. Finding relevant entries on Toronto&#39;s Development Application List is very time
+consuming for the employees of the Toronto Landtrust. This bot automates that task. 
+' name='og:description'>
+<meta content='Toronto Landtrust Bot' property='og:title'>
+<meta content='/projects/toronto-landtrust-bot.html' property='og:url'>
+<meta content='projects/landtrust.png' property='og:image'>
+<meta content='website' property='og:type'>
+
+<meta charset='UTF-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href="/images/favicon.ico" rel="icon" type="image/ico" />
+<title>
+Project
+</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet"> 
+
+
+<link href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" rel="stylesheet" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<link href="/assets/unpoly/unpoly.css" rel="stylesheet" />
+<link href="/stylesheets/normalize.css" rel="stylesheet" />
+<link href="/stylesheets/styles.css" rel="stylesheet" />
+<link href="/assets/sudoku/sudoku.css" rel="stylesheet" />
+<link href="/assets/snake/snake.css" rel="stylesheet" />
+<link href="/assets/whack-mole/mole.css" rel="stylesheet" />
+<link href="/assets/calculator/calculator.css" rel="stylesheet" />
+<link href="/assets/chess/chess.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/btn.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/contact-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/footer.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/header.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/hero.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/layout.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/menu.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/practice.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/project.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-page.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-view.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill-wrapper.css" rel="stylesheet" />
+<link href="/stylesheets/blocks/skill.css" rel="stylesheet" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<script src="/assets/unpoly/unpoly.js" defer="defer" type="module"></script>
+<script src="/javascripts/unpoly_config.js" defer="defer" type="module"></script>
+<script src="/javascripts/compilers/calculator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/chess.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/iss.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/mole.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/password-generator.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/snake.js" type="module" defer="defer"></script>
+<script src="/javascripts/compilers/sudoku.js" type="module" defer="defer"></script>
+</head>
+<body>
+<div class='layout'>
+<div class='layout--header'>
+<header class='header'>
+<nav class='header--inner-section'>
+<a href="/"><h1>Machine&nbsp;Language</h1>
+</a><div class='header--menu'>
+<div class='menu' up-nav>
+<ul class='menu--ul'>
+<li>
+<a href="/" up-layer="root">home</a>
+</li>
+<li>
+<a href="/projects.html" up-layer="root" up-alias="*/projects/* /projects/*">projects</a>
+</li>
+<li>
+<a href="/skills.html" up-layer="root">tech & skills</a>
+</li>
+<li>
+<a href="/contact.html" up-layer="root">contact</a>
+</li>
+<li>
+<a href="https://github.com/machine-language" class="menu--icon-link" target="_blank" rel="noopener"><img src="/images/GitHub.png" class="menu--icon" alt="github" />
+</a></li>
+</ul>
+</div>
+</div>
+<a href="/" class="menu--hamburger-link" up-layer="new drawer" up-target=".menu--ul"><img src="/images/bars.svg" class="menu--hamburger-image" alt="Navigation" />
+</a></nav>
+</header>
+</div>
+<main class='layout--main'>
+<h1 class='project-view--title'>Toronto Landtrust Bot</h1>
+<div class='project-view'>
+<div class='project-view--featured-image-wrapper'>
+<img src="/images/projects/landtrust.png" class="project-view--featured-image" alt="Toronto Landtrust Logo" />
+javascript
+node
+<a href="https://github.com/draigan/toronto_land_trust" class="btn -black" target="_blank" rel="noopener"><span class='btn--text'>
+Github
+</span>
+</a></div>
+<p class='project-view--long-description'>
+The Toronto Ward 4 Landtrust bot automates the task of finding new development applications within the ward 4 boundaries. It also detects any status changes of development applications
+within ward 4. This was a fun and exciting project. It was my first time working with Node, APIS, and asynchronous code. It was an ambitious project for me. Worth noting is just how
+much non programming research I had to do to understand the needs of the client, and to get the data that I needed.
+<br>
+<br>
+This program has four modules: myfs.mjs(for file system management and downloading), sorter.mjs(for finding relevant housing listings), emailer.mjs(for emailing information), 
+and finally main.mjs(for calling the different components functions). It uses an API called Nominatim to fetch longitude and latitude coordinates. It also uses a node module
+called d3-geo which can analyze geojson files. It also uses nodemailer for emailing. 
+<br>
+<br>
+When I started this project, I was quite overwhelmed. I broke the problem into bite sized portions and tackled them one at a time. First, I had to get my data from somewhere. The employees
+of the landtrust were using a leaflet map provided by the city to search for entries. As a last resort, I would use a web scraper to click through this map and record the information.  
+That sounded awful to me. So I researched, and researched and eventually I was able to find the data that was used to make that leaflet map. Hurray! It was a giant json file that was 
+updated daily! I was excited.
+<br>
+<br>
+I had a lot to learn. The first thing was Node. I understood that filesystems couldn't be manipulated from the browser, and I knew this project needed a database. I installed node 
+and started to play around. I was able to use Node to download the development list(giant json). I learned to read and write to a json database. I quickly noticed that I needed
+asynchronous code if I wanted to download data and then read it. I started to learn about async/await and promises. I practiced and practiced, until I had enough understanding
+to do what I needed.
+<br>
+<br>
+Now I had to narrow this development list down to only ward four entries because the list covers all of Toronto. I researched how to do this and found out that I could draw the boundaries 
+of ward four in a format called geojson. This seemed promising but there were two main problems with this idea. First, geojson uses longitude and latitude and the development list didn't
+include that data. Second, I had no way of analyzing this geojson in a meaningful way. To solve the first problem, I was able to find an API that provided long and lat coordinates for 
+addresses. For the second, I was able to find a node module called D3-geo which had a function that returned true if given coordinates fell within a geojson boundary.
+<br>
+<br>
+With these problems out of the way, it was finally time to actually start writing the program. First I wrote an http request to download the development list. Then I created sorter.mjs
+to compare today's development list with the development list from yesterday. I was able to narrow the list by first filtering only entries that had a postal code that was within ward four.
+Then I used the Nominatim API to retrieve long and lat for the entries and mapped them on. Then I used d3-geo to find only entries within my geojson boundaries.
+Finally I compared today's list with yesterdays and was able to find new entries that fell within the exact location boundaries of ward four. 
+I took these new applications and added them to a watch list. This list is of entries that we are currently watching for status changes. So that if the status goes from "closed" to "open" 
+the organization knows. I had to write a lot of promises to get this all working and I orchestrated everything from the main.mjs module. 
+Now that I had my curated data, I simply used nodemailer and a gmail account to mail it to the employees. It runs daily on a company computer with a linux shell and a cron job. 
+<br>
+<br>
+I really enjoyed this project. I felt like I was in uncharted territory for a lot of it. I think I did a really good job and I accounted for probably all edge cases.  
+It wasn't smooth sailing. I think I once spent a whole day fixing a bug. The type of bug my current programmer self would probably figure out in half an hour, but it was very
+rewarding when I got past bugs. In the end, I succeeded in creating a program that finds relevant development entries for the Toronto Landtrust. Thank you for reading this project report!
+
+</p>
+</div>
+
+</main>
+<div class='layout--footer'>
+<footer class='footer'>
+<div class='footer--inner-section'>
+<span class='footer--copyright'>
+</span>
+</span>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>

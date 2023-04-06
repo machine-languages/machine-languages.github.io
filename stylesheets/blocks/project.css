@@ -1,0 +1,56 @@
+.project {
+  display: grid;
+  grid-template-areas: "image heading buttons" "image description buttons" "image skills-wrapper buttons";
+  grid-template-columns: 200px 1fr auto;
+  gap: 1rem;
+  padding: 0.5rem;
+  border: 0px solid black;
+  border-radius: 5px;
+  background: #cccccc;
+  color: #171717;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
+
+.project--heading {
+  margin: 0;
+  text-transform: uppercase;
+  grid-area: heading;
+  color: #171717; }
+
+.project--description {
+  grid-area: description; }
+
+.project--skills-wrapper {
+  grid-area: skills-wrapper;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.project--buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: buttons; }
+
+.project--image {
+  max-width: 15rem;
+  grid-area: image; }
+  .project--image img {
+    width: 100%;
+    max-height: 12rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
+
+.project--skill-image {
+  width: 2.5rem; }
+
+.project--view-more {
+  font-size: 1rem; }
+
+@media screen and (max-width: 600px) {
+  .project {
+    grid-template-areas: "heading heading" "image image" "skills-wrapper skills-wrapper" "description description" "buttons buttons";
+    text-align: center;
+    width: 100%;
+    padding: 0; }
+  .project--image {
+    margin: auto; } }
